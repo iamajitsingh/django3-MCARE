@@ -3,6 +3,7 @@ CurbYourK-Means Team Project.
 
 Instructions:
 To run our code there are 3 ways:
+
 A> Live On The Internet =>
 (We have already deployed this code online so that anyone can view our product (hosted our application on a hosting service))
 1. Go to https://mcareindia.pythonanywhere.com/
