@@ -1,0 +1,222 @@
+{% load static %}
+<html lang="">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static 'custom.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+<title>            M-Care | FrostHack'21 | IIT Mandi
+ </title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top ">
+        <a class="navbar-brand" href="{% url 'home' %}" style="color: #6DDCBD">
+                      M-Care | FrostHack'21 | IIT Mandi
+
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navLinks">
+            <ul class="navbar-nav">
+                 <li class="nav-item">
+                    <a  href="#covid" class="nav-link" >Covid-19 Help</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'search' %}" class="nav-link">Prescribe Medicine</a>
+                </li>
+                  <li class="nav-item">
+                    <a href="#carousel" class="nav-link" >About (JAS) </a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#links" class="nav-link" >JAS Links</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+        <a id="covid"></a>
+ <div class="container my-4 " data-aos="fade-left" data-aos-duration="1400">
+        <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1584931423298-c576fda54bd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80)">
+  <h1 class="display-4"><strong>Covid-19 Help Center</strong> India </h1>
+      <p class="lead ">
+<hr class="my-4">
+  <div class="text-center" data-aos-delay="1000" data-aos-duration="1500" data-aos-easing="ease-in-out"  data-aos="fade-right" >
+       <a href="{% url 'covidhome' %}" class="btn btn-danger btn-lg ">Visit</a>
+      <hr class="my-4"><br>
+      <p class = "lead"> For information about emergency medicines like Remdesevir and much more  </p>
+</div>
+  </div>
+    </div>
+
+
+    <a id ="top"></a>
+    <div class="container my-4" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000">
+        <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1603555501671-8f96b3fce8b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">
+  <h1 class="display-4" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';"  >Pradhan Mantri <br>Bhartiya <br> <strong>Jan Aushadhi PariYojana</strong> </h1>
+      <p class="lead">(PMBJP Scheme) </p><br><br><br>
+
+  <div class="text-center" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="900" data-aos-easing="ease-in">
+       <a href="{% url 'search' %}" class="btn btn-secondary " style=" font-family: 'Space Grotesk', sans-serif !important;">Prescribe generic medicine</a>
+     <br><br><br>
+      <p class="lead" style="font-size:20px"> Jan Aushadhi Scheme empowers the poor.</p>
+      <p style="font-size:16px">Reduce medicine expenditures today by substituting expensive market medicines with generic Jan Aushadhi medicines.  </p>
+
+  </div>
+  </div>
+    </div>
+
+    <a id="carousel"></a>
+    <div class="container my-4">
+    <br>
+  <div id="Infoslides" class="carousel slide" data-ride="carousel" data-interval="2000">
+  <ol class="carousel-indicators">
+    <li data-target="#Infoslides" data-slide-to="0" class="active"></li>
+    <li data-target="#Infoslides" data-slide-to="1"></li>
+    <li data-target="#Infoslides" data-slide-to="2"></li>
+    <li data-target="#Infoslides" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner" >
+    <div class="carousel-item active" >
+      <img src="{% static '1.jfif' %}" class="carousel-img d-block w-100 img-responsive" alt="Responsive image" >
+      <div class="carousel-caption cap1 d-none d-md-block">
+
+          <h1 class="display-4"><strong>Vision</strong></h1>
+           <h1><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-wallet2 text-secondary" viewBox="0 0 16 16">
+  <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+</svg>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="38" height="34" fill="currentColor" class="bi bi-cash text-success" viewBox="0 0 16 16">
+  <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+  <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+</svg></h1>
+        <p class="lead">To bring down the healthcare budget of every citizen of India by providing <br> "Quality Generic Medicines at Affordable Prices".</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="{% static '2.jfif' %}" class="carousel-img d-block w-100 img-responsive" alt="Responsive image" >
+      <div class="carousel-caption cap1 d-none d-md-block">
+        <h1 class="display-4">Quality</h1>
+          <h1><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-shield-fill-check text-info" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+  <path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+</svg></h1>
+        <p class="lead">Generic medicines sold at Jan Aushadi Kendras are just as effective as the open market medicines. Except for the fact that they're much cheaper!</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="2000">
+    <img src="{% static '3.jfif' %}" class="carousel-img d-block w-100 img-responsive" alt="Responsive image" >
+      <div class="carousel-caption cap1 d-none d-md-block">
+        <h1 class="display-4">Assurance. Guaranteed</h1>
+          <h1><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-emoji-laughing text-danger" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+</svg></h1>
+        <p class="lead">Prescribe below-market rate medicines to your patients now! Reduce user expenses and help towards realising a social movement. The Jan Aushadi Kendras provide employment to thousands.</p>
+      </div>
+    </div>
+      <div class="carousel-item" data-interval="2000">
+      <img src="{% static 'vision.png' %}" class="carousel-img d-block w-100 ">
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#Infoslides" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#Infoslides" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+        <a id="links"></a>
+    </div>
+
+
+
+<div class="d-flex align-items-center justify-content-center">
+    <div class="card bg-transparent border-warning"  data-aos="fade-left"  data-aos-duration="3000" style="width: 40rem;">
+             <div class="card-body">
+                  <h5 class="card-title" style="color:#eeeeee;">Links</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">For more information about the PMBJP Scheme</h6>
+                 <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/lzLPAaygN_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+            <p class="card-text text-center" style="color:#eeeeee;">PM Narendra Modi official YouTube Channel</p>
+            <a href="http://janaushadhi.gov.in/index.aspx" target="_blank" class="card-link" style="color:hsl(357, 78%, 65%);font-size:19px">Official Website</a>
+            <a href="http://janaushadhi.gov.in/BharatMap/HtmlPage.html" target="_blank" class="card-link" style="color:#f4f231;font-size: 19px">Locate a Jan Aushadhi Store</a><br>
+            <a href="http://janaushadhi.gov.in/cfa_distri_franch.aspx" target="_blank" style="color:hsl(195, 100%, 40%);font-size:19px" class="card-link" >Find a Jan Aushadhi Distributor</a>
+          </div>
+        </div>
+</div>
+
+
+
+
+    <br>
+ <footer style="background-color:#6ca4c9;" >
+      <p class=" mb-0  lead text-center text-light" > Copyright &copy; 2021| <img src="{% static 'iiitg.png' %}" height="25" width="25"/> CurbYourK-Means |
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube text-danger" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+</svg>  YouTube Data API |
+
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github text-dark" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+          <a href = "https://github.com/iamajitsingh/django3-MCare" target="_blank" style="color:#eeeeee;">Project Link</a> |
+
+     Wear Masks <img src="{% static 'mask.png' %}" height="22" width="30"/> Save Lives <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-check-fill text-dark" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+      </p>
+  </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+        $(function () {
+            $(document).scroll(function () {
+                const $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+
+<!----AOS Data --->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:170,
+
+    });
+  </script>
+
+
+</body>
+</html>

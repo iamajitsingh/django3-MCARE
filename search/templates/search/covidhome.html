@@ -1,0 +1,407 @@
+{% load static %}
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static 'custom.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+
+
+<title>M-Care | FrostHack'21 | IIT Mandi </title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top ">
+        <a class="navbar-brand" href="{% url 'home' %}" style="color: #6DDCBD">
+           M-Care | FrostHack'21 | IIT Mandi
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navLinks">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="{% url 'display_help' %}" class="nav-link">Ask For Help!</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://docs.google.com/document/d/1AG-WJ9bQtjmib3ohzCNGp-7RFO1WxmMbCPkqbsSzPww/edit" target="_blank" class="nav-link">More Resources</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="{% url 'home' %}" class="nav-link">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <a id ="top"></a>
+    <div class="container my-4 "  data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="2000">
+        <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1584466990376-09422a2b033a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1120&q=80)">
+  <h1 class="display-4">COVID-19 Help Center (India)</h1>
+            <br>
+             <p class="lead text-center ">Community Help Center for COVID-19 </p>
+            <br>
+            <div class="text-center">
+    <a href="{% url 'display_help' %}" class="btn btn-danger btn-lg">Ask for Help</a>
+            <br><br>
+      <p class="lead text-center ">Find some important COVID-19 Emergency Information here </p>
+            </div>
+  <div class="text-center" data-aos-delay="1800" data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos="zoom-out" >
+    <lord-icon
+    src="https://cdn.lordicon.com//mdksbrtj.json"
+    trigger="loop"
+    colors="primary:#848484,secondary:#e83a30"
+    style="width:250px;height:250px">
+</lord-icon>
+      <br>
+       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#editModal">Remdesevir Distributors Near Me</button>
+          <br><br>
+      <button type="button" class="btn btn-light" data-toggle="modal" data-target="#edit2Modal">Tocilizumab Distributors Near Me</button>
+      <br><br>
+
+<div class="dropdown show">
+  <a class="btn btn-primary text-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Live Oxygen Leads
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/27?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=27%2427_Oxygen%20Supplies&widgetId=608c4815011fb174c4e8464b">Andhra Pradesh</a>
+          <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/38?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=38%2438_Oxygen%20Supplies&widgetId=608c48e3011fb174c4e88c5a">Assam</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/19?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=19%2419_Oxygen%20Supplies&widgetId=608c475f011fb174c4e80954">Bihar</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/28?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=28%2428_Oxygen%20Supplies&widgetId=608c4838011fb174c4e8514d">Chhatisgarh</a>
+          <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/1?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=1%241_Oxygen%20Supplies&widgetId=608c0f23b7cd1c7c449cb1cc">Delhi</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/20?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=20%2420_Oxygen%20Supplies&widgetId=608c476f011fb174c4e80e1d">Gujarat</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/31?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=31%2431_Oxygen%20Supplies&widgetId=608c486f011fb174c4e864a8">Haryana</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/35?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=35%2435_Oxygen%20Supplies&widgetId=608c48b4011fb174c4e87cf6">Jharkhand</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/33?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=33%2433_Oxygen%20Supplies&widgetId=608c4893011fb174c4e871a8">J&K</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/18?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=18%2418_Oxygen%20Supplies&widgetId=608c474e011fb174c4e8041d">Kerala</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/22?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=22%2422_Oxygen%20Supplies&widgetId=608c4794011fb174c4e81aba">Karnataka</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/23?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=23%2423_Oxygen%20Supplies&widgetId=608c47b2011fb174c4e82564">Madhya Pradesh</a>
+          <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/21?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=21%2421_Oxygen%20Supplies&widgetId=608c4781011fb174c4e81477">Maharashtra</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/24?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=24%2424_Oxygen%20Supplies&widgetId=608c47ca011fb174c4e82e47">Odisha</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/39?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=39%2439_Oxygen%20Supplies&widgetId=608c48fa011fb174c4e89397">Punjab</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/36?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=36%2436_Oxygen%20Supplies&widgetId=608c48c4011fb174c4e88304">Rajasthan</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/40?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=40%2440_Oxygen%20Supplies&widgetId=608c491f011fb174c4e8a018">Saurashtra</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/29?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=29%2429_Oxygen%20Supplies&widgetId=608c484b011fb174c4e857e4">Tamil Nadu</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/15?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=15%2415_Oxygen%20Supplies&widgetId=608c4722011fb174c4e7f760">Telangana</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/25?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=25%2425_Oxygen%20Supplies&widgetId=608c47dc011fb174c4e8346b">Uttar Pradesh</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/32?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=32%2432_Oxygen%20Supplies&widgetId=608c4883011fb174c4e86c7f">Uttarakhand</a>
+    <a class="dropdown-item" target="_blank" href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/30?id=DASHBOARD_601b9e214c7a6b689d76f493&tabId=30%2430_Oxygen%20Supplies&widgetId=608c485c011fb174c4e85e03">West Bengal</a>
+    </div>
+</div>
+      <br>
+       <div class="dropdown show">
+  <a class="btn text-light dropdown-toggle" style="background-color: #bd3381" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Hospital Beds Availability
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" target="_blank" href="http://dashboard.covid19.ap.gov.in/ims/hospbed_reports/">Andhra Pradesh</a>
+    <a class="dropdown-item" target="_blank" href="https://covid19health.bihar.gov.in/DailyDashboard/BedsOccupied">Bihar</a>
+    <a class="dropdown-item" target="_blank" href="https://coronabeds.jantasamvad.org/beds.html">Delhi</a>
+    <a class="dropdown-item" target="_blank" href="https://www.goa.gov.in/wp-content/uploads/2021/04/Important-Contact-Numbers-of-Hospitals-CHC-PHC-UHC.pdf">Goa</a>
+    <a class="dropdown-item" target="_blank" href="https://coronaharyana.in/">Haryana</a>
+    <a class="dropdown-item" target="_blank" href="http://www.nrhmhp.gov.in/content/covid-health-facilities">Himachal Pradesh</a>
+    <a class="dropdown-item" target="_blank" href="http://bbmpgov.com/chbms/">Karnataka</a>
+    <a class="dropdown-item" target="_blank" href="https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard">Kerala</a>
+    <a class="dropdown-item" target="_blank" href="http://sarthak.nhmmp.gov.in/covid/facility-bed-occupancy-dashboard/">Madhya Pradesh</a>
+    <a class="dropdown-item" target="_blank" href="https://meghealth.in/MeghCare.html">Meghalaya</a>
+    <a class="dropdown-item" target="_blank" href="https://statedashboard.odisha.gov.in/Pages/ImpInfo/covidHospitals">Odisha</a>
+    <a class="dropdown-item" target="_blank" href="https://www.goa.gov.in/wp-content/uploads/2021/04/Important-Contact-Numbers-of-Hospitals-CHC-PHC-UHC.pdf">Goa</a>
+    <a class="dropdown-item" target="_blank" href="https://covid19dashboard.py.gov.in/BedAvailabilityDetails">Puducherry</a>
+    <a class="dropdown-item" target="_blank" href="https://covidinfo.rajasthan.gov.in/COVID19HOSPITALBEDSSTATUSSTATE.aspx">Rajasthan</a>
+    <a class="dropdown-item" target="_blank" href="https://jagtial.telangana.gov.in/covid-19-hospital-bed-availability-status/">Telangana</a>
+    <a class="dropdown-item" target="_blank" href="https://stopcorona.tn.gov.in/beds.php">Tamil Nadu</a>
+    <a class="dropdown-item" target="_blank" href="https://covid19.uk.gov.in/bedssummary.aspx">Uttarakhand</a>
+    <a class="dropdown-item" target="_blank" href="https://www.wbhealth.gov.in/pages/corona/bed_availability">West Bengal</a>
+    <a class="dropdown-item" target="_blank" href="https://ahna.org.in/AMC%20REQUISITIONED%20HOSPITAL%20STATUS%2001-05-2021%205.00%20PM%20ONLINE.pdf">Ahmedabad</a>
+    <a class="dropdown-item" target="_blank" href="https://coronaharyana.in/?city=4">Faridabad</a>
+    <a class="dropdown-item" target="_blank" href="https://coronaharyana.in/?city=6">Gurugram</a>
+    <a class="dropdown-item" target="_blank" href="https://beds.dgmhup-covid19.in/EN/covid19bedtrack">Lucknow</a>
+    <a class="dropdown-item" target="_blank" href="https://nmmchealthfacilities.com/HospitalInfo/showhospitalist">Navi Mumbai</a>
+    <a class="dropdown-item" target="_blank" href="http://nsscdcl.org/covidbeds/AvailableHospitals.jsp">Nagpur</a>
+    <a class="dropdown-item" target="_blank" href="http://covidcbrs.nmc.gov.in/home/hospitalSummary">Nashik</a>
+    <a class="dropdown-item" target="_blank" href="https://www.divcommpunecovid.com/ccsbeddashboard/hsr">Pune</a>
+    <a class="dropdown-item" target="_blank" href="http://office.suratsmartcity.com/SuratCOVID19/Home/COVID19BedAvailabilityDetails">Surat</a>
+   </div>
+</div>
+      <br>
+      <button type="button" class="btn text-light" style="background-color: #ee583f" data-toggle="modal" data-target="#edit5Modal">Live Blood Stock & Plasma</button>
+      <br><br>
+
+      <button type="button" class="btn text-light" style="background-color: #cc3300" data-toggle="modal" data-target="#edit3Modal">Blood Banks and Ambulance Services</button>
+      <br><br>
+
+      <button type="button" class="btn text-light" style="background-color: darkblue" data-toggle="modal" data-target="#edit4Modal">Vaccination Centers Near Me</button>
+      <br><br>
+
+  </div>
+            <br>
+            <p>Data Compiled from Crowd Sourced (Public) data sources. Hospitals' data procured from Ministry of Health and Welfare, India under the Ayushman Bharat (PMJAY) Scheme.
+                <br> Oxygen Leads compiled via Sprinklr, free for open source use.
+                <br> Live Blood Stock links to National Health Mission (NHM) e-Rakt Kosh . Referred to UBlood for Blood Plasma Services.
+            </p>
+  </div>
+    </div>
+
+
+  <div class="container my-4"  data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="2000">
+        <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1614030388990-7f3515ee0940?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=80)">
+  <h1 class="display-4">State Helpline Numbers</h1>
+            <div class=" searchHead row d-flex align-items-center justify-content-center mt-4 mr-0"  data-aos-delay="1000" data-aos-duration="400" data-aos-easing="ease-in-out"  data-aos="fade"><h1 class=" font-weight-light">Central HelpLine:  011-23978046 </h1></div>
+<hr>
+<table class="table table-hover table-dark ">
+  <thead class="text-light">
+    <tr>
+      <th scope="col" class="text-primary">#</th>
+      <th scope="col">State</th>
+      <th scope="col">HelpLine</th>
+    </tr>
+  </thead>
+  <tbody>
+
+      {% for i,j,k in my_list %}
+    <tr>
+      <th scope="row" class="text-primary">{{i}}</th>
+      <td>{{j}}</td>
+        <td>{{k}}</td>
+    </tr>
+         {% endfor %}
+
+  </tbody>
+</table>
+
+  </div>
+
+      <h5 class="alert alert-success text-center mt-3"> Stay Home <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-house-fill text-danger" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg> or Wear Masks <img src="{% static 'mask.png' %}" height="36" width="40"/> Save Lives <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-check-fill text-primary" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg></h5>
+<script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com//xgpppfia.json"
+    trigger="loop"
+    colors="primary:#faddd1,secondary:#08a88a"
+    style="width:200px;height:200px">
+</lord-icon>
+<lord-icon
+    src="https://cdn.lordicon.com//akqpsmch.json"
+    trigger="loop"
+    colors="primary:#faddd1,secondary:#08a88a"
+    style="width:200px;height:200px">
+</lord-icon>
+<lord-icon
+    src="https://cdn.lordicon.com//toojndol.json"
+    trigger="loop"
+    colors="primary:#faddd1,secondary:#d1f3fa"
+    style="width:200px;height:200px">
+</lord-icon>
+<lord-icon
+    src="https://cdn.lordicon.com//qnxmsqym.json"
+    trigger="loop"
+    colors="primary:#faddd1,secondary:#9cc2f4"
+    style="width:200px;height:200px">
+</lord-icon>
+<lord-icon
+    src="https://cdn.lordicon.com//aaodnvls.json"
+    trigger="loop"
+    colors="primary:#faddd1,secondary:#e83a30"
+    style="width:200px;height:200px">
+</lord-icon>
+
+    </div>
+    <div class="row justify-content-center  mr-0 "><lord-icon
+    src="https://cdn.lordicon.com//gazjnoea.json"
+    trigger="loop"
+    colors="primary:#faddd1,secondary:#eee966"
+    style="width:250px;height:250px">
+</lord-icon>
+       </div>
+     <div class="row justify-content-center  mr-0">
+      <h5 class="alert alert-success text-center mt-3">6 Steps towards Ensuring Safety!</h5>
+     </div>
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">State Where You Live:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form action="/showrem" method="POST"  enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for ="captext">State : </label>
+            <br>
+            <textarea name="captions" id="captions" cols="30" rows="3" placeholder="(Maharashtra/Delhi/Assam/etc.)" class="ml-4"></textarea>
+           <br><br>
+            <button type="submit" class="btn btn-warning">Search For Remdesevir</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="edit4Modal" tabindex="-1" role="dialog" aria-labelledby="edit4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit4ModalLabel">District Where You Live:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form action="/vaccine" method="POST"  enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for ="captext">District : </label>
+            <br>
+            <textarea name="captions" id="captions" cols="30" rows="3" placeholder="(Ahmedabad/Chandigarh/Varanasi/etc.)" class="ml-4"></textarea>
+           <br><br>
+            <button type="submit" class="btn btn-warning">Search For Vaccination Centre</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="edit2Modal" tabindex="-1" role="dialog" aria-labelledby="edit2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit2ModalLabel">State Where You Live:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form action="/tozi" method="POST"  enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for ="captext">State : </label>
+            <br>
+            <textarea name="captions" id="captions" cols="30" rows="3" placeholder="(Maharashtra/Delhi/Assam/etc.)" class="ml-4"></textarea>
+           <br><br>
+            <button type="submit" class="btn btn-warning">Search For Tocilizumab</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="edit3Modal" tabindex="-1" role="dialog" aria-labelledby="edit3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit3ModalLabel">State Where You Live:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form action="/bloodamb" method="POST"  enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for ="captext">State : </label>
+            <br>
+            <textarea name="captions" id="captions" cols="30" rows="3" placeholder="(Maharashtra/Delhi/Assam/etc.)" class="ml-4"></textarea>
+           <br><br>
+            <button type="submit" class="btn btn-warning">Search For Ambulance/Blood Bank Services</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+       <!-- Modal -->
+<div class="modal fade" id="edit5Modal" tabindex="-1" role="dialog" aria-labelledby="edit5ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit5ModalLabel">Live Blood Stock/Plasma</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <a href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt" style="color: #cc3300" target="_blank">Check for live blood stock in the country  </a>
+          <br>
+                    <a href="https://ublood.com/covid/donor-signup" style="color: #cc3300" target="_blank">Donate Plasma (UBlood)  </a>
+          <br>
+          <a href="https://ublood.com/covid/plasma-request" style="color: #cc3300" target="_blank">Request Blood Plasma (UBlood)  </a>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer style="background-color:#6ca4c9;" >
+      <p class=" mb-0  lead text-center text-light" > Copyright &copy; 2021| <img src="{% static 'iiitg.png' %}" height="25" width="25"/> CurbYourK-Means |
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube text-danger" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+</svg>  YouTube Data API |
+
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github text-dark" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+          <a href = "https://github.com/iamajitsingh/django3-MCare" target="_blank" style="color:#eeeeee;">Project Link</a> |
+
+     Wear Masks <img src="{% static 'mask.png' %}" height="22" width="30"/> Save Lives <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-check-fill text-dark" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+      </p>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+
+<!----AOS Data --->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:170,
+        once: true,
+
+    });
+  </script>
+</body>
+</html>

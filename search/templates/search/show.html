@@ -1,0 +1,207 @@
+{% load static %}
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static 'custom.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+<title>           M-Care | FrostHack'21 | IIT Mandi
+</title>
+</head>
+
+<body>
+
+  <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top ">
+        <a class="navbar-brand branding" href="{% url 'home' %}" style="color: #6DDCBD">
+                     M-Care | FrostHack'21 | IIT Mandi
+
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{% url 'home' %}" class="nav-link">Home</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'search' %}">Go Back</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#information" class="nav-link">Information</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#top">Top</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<br>
+  <br>
+  <br>
+  <a id = "top"></a>
+  <div class="container mt-4" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="2000">
+  <div class="jumbotron bg-cover text-white"  style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://images.unsplash.com/photo-1618356387902-245c575733f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)">
+   <h1 class="display-4">Search Results for {{entered}}</h1>
+      <hr>
+  <div class="text-center" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-easing="ease-in">
+     <div class=" searchHead pt-1 pb-1"><h1 class="font-weight-light">Cheapest medicine for {{entered}}:</h1></div>
+    <p class="lead">{{bestname}} at <strong>MRP: </strong>{{bestprice}}</p>
+       {% if worstsection == 'Open Market' %}
+    <p class="lead">It is a {{bestsection}} product</p>
+      {% else %}
+    <p class="lead">It is an {{bestsection}} product</p>
+      {% endif %}
+       <div class=" searchHead pt-1 pb-1"><h1 class="font-weight-light">Closest {{worstsection}} Alternative:</h1></div>
+
+    {% if worstsection == 'Open Market' %}
+      <p class="lead">{{minName1}} at <strong>MRP: </strong>{{minPrice1}}</p>
+
+      {% else %}
+      <p class="lead">{{minName}} at <strong>MRP: </strong>{{minPrice}}</p>
+
+      {% endif %}
+    <h5 class="alert alert-warning text-center mt-3">Money Saved per dose = Rs. {{difference}} <br> Percentage Savings (%) = {{savings}} % </h5>
+      {% if worstsection == 'Open Market' %}
+    <p class="lead">
+        Therefore, cheapest medicine for {{entered}} is available at a {{bestsection}} seller. <br>
+        Prescribe {{entered}} from a {{bestsection}} seller rather than an {{worstsection}} seller so that the user can save
+        <br> {{savings}}% of their money!
+    </p>
+      {% else %}
+      <p class="lead">
+           Therefore, cheapest medicine for {{entered}} is available at an {{bestsection}} seller. <br>
+          Prescribe {{entered}} from an {{bestsection}} seller  rather than a {{worstsection}} seller so that the user can save
+          <br>{{savings}}% of their money!
+      </p>
+          {% endif %}
+      <p class="lead" ><a href="{% url 'allresult' %}" style="font-size:26px;color:#f4f231;">View all results for {{entered}} </a></p>
+  </div>
+  </div>
+</div>
+  <a id="information"></a>
+<div class="d-flex align-items-center justify-content-center"  data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="2000">
+  <div class="card bg-transparent border-success"  style="width: 40rem;">
+  <div class="card-body">
+    <h5 class="card-title text-center text-light"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-info-circle-fill text-primary" viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+</svg><br>Information about {{entered}} </h5>
+    <p class="card-text text-muted">Note: <br> Information presented here is general information present on the internet, posted to spread a bit of awareness among people. <br> Consult with a registered practitioner for better information.</p>
+  </div>
+  <ul class="list-group list-group-flush ">
+    <li class="list-group-item"><span style="color:hsl(9, 100%, 64%)">Use Cases: </span>{{uses}} etc.</li>
+    <li class="list-group-item"><span style="color:hsl(9, 100%, 64%)">Side Effects: </span> {{side_effect}}etc.</li>
+    <li class="list-group-item"><span style="color:hsl(9, 100%, 64%)">Is it Habit forming: </span>{{habit}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://www.google.com/search?q={{entered}}" target="_blank" class="card-link" style="color:hsl(195, 100%, 40%);font-size:19px" >Search on Google</a>
+    <a href="https://en.wikipedia.org/wiki/{{entered}}" target="_blank" class="card-link" style="color:hsl(357, 78%, 65%);font-size:19px">View on Wikipedia</a>
+  </div>
+</div>
+</div>
+
+
+<! -- Youtube section -- >
+  <br><br><br>
+
+  <div class=" searchHead row d-flex align-items-center justify-content-center mt-4 mr-0" data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="500" data-aos-duration="2500"><h1 class=" font-weight-light">Youtube videos on {{entered}}:</h1></div>
+
+  <div class="row d-flex align-items-center justify-content-center mt-4 mr-0" data-aos="zoom-in-left" data-aos-easing="ease-in" data-aos-delay="500" data-aos-duration="2500">
+      <div class="col-md-3 mt-3">
+        <div class="card  bg-transparent border-danger mb-4 ">
+          <iframe width="100%" height="225" src="https://www.youtube.com/embed/{{url1}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <div class="card-body">
+            <p class="card-text text-light">{{title1}}</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 mt-3">
+        <div class="card mb-4  bg-transparent border-danger ">
+          <iframe width="100%" height="225" src="https://www.youtube.com/embed/{{url2}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <div class="card-body">
+            <p class="card-text text-light">{{title2}}</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 mt-3">
+        <div class="card mb-4  bg-transparent border-danger ">
+          <iframe width="100%" height="225" src="https://www.youtube.com/embed/{{url3}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <div class="card-body">
+            <p class="card-text text-light">{{title3}}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<br>
+   <footer style="background-color:#6ca4c9;" >
+      <p class=" mb-0  lead text-center text-light" > Copyright &copy; 2021| <img src="{% static 'iiitg.png' %}" height="25" width="25"/> CurbYourK-Means |
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube text-danger" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+</svg>  YouTube Data API |
+
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github text-dark" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+          <a href = "https://github.com/iamajitsingh/django3-MCare" target="_blank" style="color:#eeeeee;">Project Link</a> |
+
+     Wear Masks <img src="{% static 'mask.png' %}" height="22" width="30"/> Save Lives <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-check-fill text-dark" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+      </p>
+  </footer>
+ <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+  <script>
+
+      $.each( $('*'), function() {
+   if( $(this).width() > $('body').width()) {
+   console.log("Wide Element: ", $(this), "Width: ",
+                              $(this).width());
+   }
+});
+
+  </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:300,
+
+    });
+  </script>
+
+</body>
+</html>

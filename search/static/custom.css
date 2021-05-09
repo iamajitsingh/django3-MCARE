@@ -1,0 +1,80 @@
+footer {
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
+}
+body {
+    background: #121212;
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+nav{
+   font-family: 'Nunito', sans-serif !important;
+}
+
+
+.blurb p {
+    color: #88020d;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 250;
+}
+
+#mainNavbar .nav-link {
+    color: #eeeeee;
+    font-weight: 300;
+}
+
+#mainNavbar .nav-link:hover {
+    color: red;
+}
+
+#mainNavbar .navbar-brand {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #88020d;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: hsl(0, 0%, 24%);
+    transition: background 800ms;
+}
+.carousel-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cap1{
+    font-family: 'Nunito', sans-serif !important;
+    color:black;
+
+}
+.anim{
+      color: #f4f231  ;
+}
+.searchHead{
+  color: hsl(9, 100%, 64%);
+}
+
+li.list-group-item{
+background:black;
+color:white
+}
+
