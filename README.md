@@ -26,9 +26,9 @@ Credits:
 Used various Government Sources to display data.
 All of the code is 100% owned by us. However, we do link to others' websites since we are making this product as a part of a social goodwill
 and we don't want our users to be left out of any help. 
-Linked to Sprinklr Dashboard for displaying Twitter-compiled Oxygen Leads' Data
-Linked to various government websites for displaying hospital beds' data, Blood Stock Data as well as linked to official website of JAS Scheme
-Linked to UBlood for making donation and requesting for Plasma
+Linked to Sprinklr Dashboard for displaying Twitter-compiled Oxygen Leads' Data.
+Linked to various government websites for displaying hospital beds' data, Blood Stock Data as well as linked to official website of JAS Scheme.
+Linked to UBlood for making donation and requesting for Plasma.
 Linked to Google and Wikipedia for showing more relevant information about the entered medicines.
 Linked to GitHub to showcase our project link from within the website.
 
