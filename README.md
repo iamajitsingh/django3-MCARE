@@ -1,5 +1,5 @@
-## MCARE
-# Medicines And Covid related Resources for Everyone => Team CurbYourK-Means
+# MCARE
+## Medicines And Covid related Resources for Everyone => Team CurbYourK-Means
 CurbYourK-Means Team Project. 
 Lead Dev/Full Stack Developer => Ajit Singh, BTech. 3rd year, IIITG-ECE
 Software Developers => Ashmik Harinkhede, Ankit Kumar (Mobile Application Developer)
