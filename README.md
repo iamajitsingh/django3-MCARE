@@ -1,4 +1,5 @@
-# django3-MCare
+# MCARE
+# Medicines And Covid related Resources for Everyone
 CurbYourK-Means Team Project. 
 
 Instructions:
