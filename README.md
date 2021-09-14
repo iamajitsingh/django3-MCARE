@@ -9,6 +9,6 @@ Idea => We accumulated the ideas for the project over the course of participatin
 * View our entire problem statement to know about the solutions offered by Mcare and its features:
 https://drive.google.com/file/d/10eKTkN2TBWRCbOTO99PBHmGueT_YKnQG/view?usp=sharing
 * Mobile (android) application for MCare: https://drive.google.com/drive/folders/1NiryGs0IJHNenSf8J8R_W_t17cYVQfQq 
-* Recognition of Covid-19 dashboard at HackDSC'21, Google Developer Students Club VIT:
+* Recognition of Covid-19 dashboard at HackDSC'21 by Google Developer Students Club VIT:
 ![](Readme_images/HackDSC.png)
 
