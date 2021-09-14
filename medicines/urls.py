@@ -34,6 +34,10 @@ urlpatterns = [
     path('tozi', views.tozi, name='tozi'),
     path('bloodamb', views.bloodamb, name='bloodamb'),
 
+    #COVID-19 Forum Section
+    path('display_help', views.display_help, name='display_help'),
+    path('ask_help', views.ask_help, name='ask_help'),
+    path('completed_help', views.completed_help, name='completed_help'),
 
     # About us
     path('about', views.about, name='about'),

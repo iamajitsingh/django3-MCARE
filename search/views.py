@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
-from .forms import SearchForm
 import urllib
 import requests
-import json
 import pandas as pd
-from .models import Video
+
+from .models import Post
+from .forms import SearchForm,PostForm
 
 YOUTUBE_API_KEY = 'AIzaSyA-PddeHxoBEmK9Y0COA-eoyt9a0316jYk'
 
@@ -413,3 +413,23 @@ def vaccine(request):
     }
 
     return render(request, 'search/vaccine.html', data)
+
+
+def display_help(request):
+    posts = Post.objects.all().order_by('-date_posted')
+    return render(request, 'search/display_help.html', {'form': PostForm(), 'posts': posts})
+
+
+def ask_help(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        newpost = form.save(commit=False)
+        newpost.is_completed = False
+        newpost.save()
+
+    return redirect('display_help')
+
+
+def completed_help(request):
+    posts = Post.objects.all().order_by('-date_posted')
+    return render(request, 'search/completed.html', {'posts': posts})
