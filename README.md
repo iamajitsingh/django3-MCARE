@@ -1,8 +1,6 @@
 # MCARE
 ## Medicines And Covid related Resources for Everyone => Team CurbYourK-Means
-CurbYourK-Means Team Project => A part of the project (Covid 19 dashboard) was the submission at HackDSC 2021, VIT. 
-Full Stack/Django Developer => Ajit Singh, BTech. 3rd year, IIITG-ECE
-Software Developers => Ashmik Harinkhede, BTech. 3rd year, IIITG-CSE &  Ankit Kumar BTech. 3rd year, IIITG-ECE (Android Application Developer)
+CurbYourK-Means (IIIT Guwahati) Team Project => A part of the project (Covid 19 dashboard) was the submission at HackDSC 2021, VIT. 
 
 Idea => We accumulated the ideas for the project over the course of participating in many hackathons.
 Participating and winning *2nd position in SocioThon 2021* convinced us to work in the **healthcare** domain. The Covid-19 Pandemic uprise in India (March 2021- May 2021) convinced us to build a **Covid based application**.
