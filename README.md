@@ -10,5 +10,5 @@ Idea => We accumulated the ideas for the project over the course of participatin
 https://drive.google.com/file/d/10eKTkN2TBWRCbOTO99PBHmGueT_YKnQG/view?usp=sharing
 * Mobile (android) application for MCare: https://drive.google.com/drive/folders/1NiryGs0IJHNenSf8J8R_W_t17cYVQfQq 
 * Recognition of Covid-19 dashboard at HackDSC'21, Google Developer Students Club VIT:
-![alt text](https://drive.google.com/drive/folders/1VwayGGQrBZJVrhVq1FBUm0sk1oU7etVt)
+![](Readme_images/HackDSC.png)
 
