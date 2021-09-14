@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*3$hwdj#hlrark94ldhek!cv=#$b4d9^^__aro8%j(0at2)-za'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['mcare4all.pythonanyhere.com']
+ALLOWED_HOSTS = ['mcare4all.pythonanywhere.com']
 
 # Application definition
 
