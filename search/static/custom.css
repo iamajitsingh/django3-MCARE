@@ -78,3 +78,9 @@ background:black;
 color:white
 }
 
+
+@media (max-width: 800px) {
+    .navbar {
+        background: #343F4F;
+    }
+}
